@@ -1,717 +1,704 @@
-<!--Slider Start-->
-<div class="slider">
-    <div class="slide-carousel slider-one owl-carousel">
-        <?php
-        foreach ($sliders as $slider) {
-            ?>
-            <div class="slider-item flex" style="background-image:url(<?php echo base_url(); ?>public/uploads/<?php echo $slider['photo']; ?>);">
-                <div class="bg-slider"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="<?php if($slider['position'] == 'Left') {echo 'col-lg-6 col-md-9 col-12';} else {echo 'offset-lg-6 col-lg-6 offset-md-3 col-md-9 col-12';} ?>">
-                            <div class="slider-text">
+<section class="main-parallex-wrapper" style="background-image: url('<?php echo base_url(); ?>public/kalyan/assets/img/hero/Banner-Image.jpg');">
+    <div class="container p-relative">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 hero-txt text-center">
 
-                                <?php if($slider['heading']!=''): ?>
-                                <div class="text-animated">
-                                    <h1><?php echo $slider['heading']; ?></h1>
-                                </div>
-                                <?php endif; ?>
-                                
-                                <?php if($slider['content']!=''): ?>
-                                <div class="text-animated">
-                                    <p>
-                                        <?php echo nl2br($slider['content']); ?>
-                                    </p>
-                                </div>
-                                <?php endif; ?>
-                            
-                                
-                                <?php if( $slider['button1_text'] != '' || $slider['button2_text'] != '' ): ?>
-                                <div class="text-animated">
-                                    <ul>                                        
-                                        <?php if($slider['button1_text'] != ''): ?>
-                                        <li><a href="<?php echo $slider['button1_url']; ?>"><?php echo $slider['button1_text']; ?></a></li>
-                                        <?php endif; ?>
+                <h4 class="h4-xs">We have 20+ years experience in</h4>
+                <h2>US VISA Guidance Made Easy</h2>
 
-                                        <?php if($slider['button2_text'] != ''): ?>
-                                        <li><a href="<?php echo $slider['button2_url']; ?>"><?php echo $slider['button2_text']; ?></a></li>
-                                        <?php endif; ?>
-                                    </ul>
-                                </div>
-                                <?php endif; ?>
+                <p class="p-md">Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis and
+                    placerat purus feugiat primis ultrice in ligula impedit magna purus pretium neque ligula</p>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php
-        }
-        ?>
-    </div>
-</div>
-<!--Slider End-->
-
-<!--About Start-->
-<?php if($page_home_lang_independent['home_welcome_status'] == 'Show'): ?>
-<div class="about-area pt_60 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mt_30">
-                <div class="about-content">
-                    <div class="headline-left">
-                        <h2>
-                            <span><?php echo $page_home['home_welcome_title']; ?></span> <?php echo $page_home['home_welcome_subtitle']; ?>
-                        </h2>
-                    </div>
-                    <p>
-                        <?php echo $page_home['home_welcome_text']; ?>
-                    </p>
-                    
-                    <div class="progress-gallery main-prog">
-
-                        <?php if( $page_home['home_welcome_pbar1_text']!='' && $page_home['home_welcome_pbar1_value']!='' ): ?>
-                        <div class="bar-container">
-                            <p><?php echo $page_home['home_welcome_pbar1_text']; ?></p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="<?php echo $page_home['home_welcome_pbar1_value']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $page_home['home_welcome_pbar1_value']; ?>%">
-                                </div>
-                            </div>
-                            <div class="percentage-show"><?php echo $page_home['home_welcome_pbar1_value']; ?>%</div>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if( $page_home['home_welcome_pbar2_text']!='' && $page_home['home_welcome_pbar2_value']!='' ): ?>
-                        <div class="bar-container">
-                            <p><?php echo $page_home['home_welcome_pbar2_text']; ?></p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="<?php echo $page_home['home_welcome_pbar2_value']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $page_home['home_welcome_pbar2_value']; ?>%">
-                                </div>
-                            </div>
-                            <div class="percentage-show"><?php echo $page_home['home_welcome_pbar2_value']; ?>%</div>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if( $page_home['home_welcome_pbar3_text']!='' && $page_home['home_welcome_pbar3_value']!='' ): ?>
-                        <div class="bar-container">
-                            <p><?php echo $page_home['home_welcome_pbar3_text']; ?></p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="<?php echo $page_home['home_welcome_pbar3_value']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $page_home['home_welcome_pbar3_value']; ?>%">
-                                </div>
-                            </div>
-                            <div class="percentage-show"><?php echo $page_home['home_welcome_pbar3_value']; ?>%</div>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if( $page_home['home_welcome_pbar4_text']!='' && $page_home['home_welcome_pbar4_value']!='' ): ?>
-                        <div class="bar-container">
-                            <p><?php echo $page_home['home_welcome_pbar4_text']; ?></p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="<?php echo $page_home['home_welcome_pbar4_value']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $page_home['home_welcome_pbar4_value']; ?>%">
-                                </div>
-                            </div>
-                            <div class="percentage-show"><?php echo $page_home['home_welcome_pbar4_value']; ?>%</div>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if( $page_home['home_welcome_pbar5_text']!='' && $page_home['home_welcome_pbar5_value']!='' ): ?>
-                        <div class="bar-container">
-                            <p><?php echo $page_home['home_welcome_pbar5_text']; ?></p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar" aria-valuenow="<?php echo $page_home['home_welcome_pbar5_value']; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $page_home['home_welcome_pbar5_value']; ?>%">
-                                </div>
-                            </div>
-                            <div class="percentage-show"><?php echo $page_home['home_welcome_pbar5_value']; ?>%</div>
-                        </div>
-                        <?php endif; ?>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt_30">
-                <div class="about-tab" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_welcome_video_bg']; ?>)">
-                    <div class="video-section">
-                        <a class="video-button" href="#" data-toggle="modal" data-target="#myModal"><span></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Modal-Box Start-->
-    <div class="video-modal">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="video-box bg-area">
-                        <div class="modal fade in" id="myModal" role="dialog">
-                            <div class="modal-dialog hb-style">
-
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="download-video">
-                                            <div style="position:relative;height:0;padding-bottom:56.21%">
-                                               <?php echo $page_home_lang_independent['home_welcome_video']; ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Modal-Box End-->
-</div>
-<?php endif; ?>
-<!--About End-->
-
-<!--Choose-Area Start-->
-<?php if($page_home_lang_independent['home_why_choose_status'] == 'Show'): ?>
-<div class="choose-area pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_why_choose_title']; ?></h2>
-                    <h3><?php echo $page_home['home_why_choose_subtitle']; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php
-            foreach ($why_choose as $row) {
-                ?>
-                <div class="col-lg-4">
-                    <div class="choose-item flex" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
-                        <div class="choose-icon">
-                            <i class="<?php echo $row['icon']; ?>" aria-hidden="true"></i>
-                        </div>
-                        <div class="choose-text">
-                            <h4><?php echo $row['name']; ?></h4>
-                            <p>
-                                <?php echo nl2br($row['content']); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Choose-Area End-->
-
-
-<!--Feature-Area Start-->
-<?php if($page_home_lang_independent['home_feature_status'] == 'Show'): ?>
-<div class="feature-area feature-two bg-area pt_90 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_feature_title']; ?></h2>
-                    <h3><?php echo $page_home['home_feature_subtitle']; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php
-            foreach ($features as $row) {
-                ?>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="<?php echo $row['icon']; ?>" aria-hidden="true"></i>
-                        </div>
-                        <div class="feature-text">
-                            <h4><?php echo $row['name']; ?></h4>
-                            <p>
-                                <?php echo nl2br($row['content']); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Feature-Area End-->
-
-
-<!--Services Start-->
-<?php if($page_home_lang_independent['home_service_status'] == 'Show'): ?>
-<div class="services-area pt_90 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_service_title']; ?></h2>
-                    <h3><?php echo $page_home['home_service_subtitle']; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-            <?php
-            foreach ($services as $row) {
-                ?>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item effect-item">
-                        <a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>" class="image-effect">
-                            <div class="services-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
-                        </a>
-                        <div class="services-text">
-                            <h3><a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></h3>
-                            <p>
-                                <?php echo nl2br($row['short_description']); ?>
-                            </p>
-                            <div class="button-bn">
-                                <a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>"><?php echo READ_MORE; ?> <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Services End-->
-
-
-<!--Counter-Area Start-->
-<?php if($page_home_lang_independent['counter_status'] == 'Show'): ?>
-<div class="counterup-area pt_60 pb_90" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['counter_photo']; ?>)">
-    <div class="bg-counterup"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="counter-item flex">
-                    <i class="<?php echo $page_home['counter_1_icon']; ?>" aria-hidden="true"></i>
-                    <h2 class="counter"><?php echo $page_home['counter_1_value']; ?></h2>
-                    <h4><?php echo $page_home['counter_1_title']; ?></h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="counter-item flex">
-                    <i class="<?php echo $page_home['counter_2_icon']; ?>" aria-hidden="true"></i>
-                    <h2 class="counter"><?php echo $page_home['counter_2_value']; ?></h2>
-                    <h4><?php echo $page_home['counter_2_title']; ?></h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="counter-item flex">
-                    <i class="<?php echo $page_home['counter_3_icon']; ?>" aria-hidden="true"></i>
-                    <h2 class="counter"><?php echo $page_home['counter_3_value']; ?></h2>
-                    <h4><?php echo $page_home['counter_3_title']; ?></h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="counter-item flex">
-                    <i class="<?php echo $page_home['counter_4_icon']; ?>" aria-hidden="true"></i>
-                    <h2 class="counter"><?php echo $page_home['counter_4_value']; ?></h2>
-                    <h4><?php echo $page_home['counter_4_title']; ?></h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Counter-Area End-->
-
-
-<!--Portfolio Start-->
-<?php if($page_home_lang_independent['home_portfolio_status'] == 'Show'): ?>
-<div class="portfolio-area pt_90 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_portfolio_title']; ?></h2>
-                    <h3><?php echo $page_home['home_portfolio_subtitle']; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="portfolio-menu">
-                    <ul id="filtrnav">
-                        <li class="filtr filtr-active" data-filter="all"><?php echo ALL; ?></li>
-                        <?php
-                        foreach ($portfolio_category as $row) {
-                            ?>
-                            <li class="filtr" data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
-                            <?php
-                        }
-                        ?>
+                <div class="parallex-list">
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i><span>No Interviews</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Relocate in 30 Days</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Afforable Fee</span></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row filtr-container">            
-            <?php
-            foreach ($portfolio as $row) {
-                ?>
-                <div class="col-lg-4 col-md-6 filtr-item" data-category="<?php echo $row['category_id']; ?>" data-sort="Menu">
-                    <div class="portfolio-group">
-                        <div class="portfolio-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
-                            <div class="portfolio-bg"></div>
-                            <div class="portfolio-table">
-                                <div class="portfolio-icon">
-                                    <a href="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" class="magnific"><i class="fa fa-search-plus"></i></a>
+    </div>
+</section>
+
+<!-- team area stat -->
+<section class="tp-team-area top-banner-slide pb-40 p-relative">
+    <div class="container">
+        <div class="tp-team-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="tp-team-active swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="tp-team-item">
+                            <div class="tp-team-thumb">
+                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/us-king.jpg" alt="">
+                            </div>
+                            <div class="tp-team-content">
+                                <div class="tp-team-inner">
+                                    <h4 class="tp-team-title"><a href="javascript:void(0)">United Kingdom</a></h4>
+                                </div>
+                                <div class="tp-team-social">
+                                    <div class="tp-team-btn">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/united-kingdom.png">
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-text">
-                            <h3><a href="<?php echo base_url(); ?>portfolio/view/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></h3>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tp-team-item">
+                            <div class="tp-team-thumb">
+                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/usa.jpg" alt="">
+                            </div>
+                            <div class="tp-team-content">
+                                <div class="tp-team-inner">
+                                    <h4 class="tp-team-title"><a href="javascript:void(0)">United States</a></h4>
+                                    <!-- <span>Consultant</span> -->
+                                </div>
+                                <div class="tp-team-social">
+                                    <div class="tp-team-btn">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/usa-ic.png">
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="tp-team-item">
+                            <div class="tp-team-thumb">
+                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/canada.jpg" alt="">
+                            </div>
+                            <div class="tp-team-content">
+                                <div class="tp-team-inner">
+                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Canada</a></h4>
+                                    <!-- <span>Consultant</span> -->
+                                </div>
+                                <div class="tp-team-social">
+                                    <div class="tp-team-btn">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/china.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tp-team-item">
+                            <div class="tp-team-thumb">
+                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia.jpg" alt="">
+                            </div>
+                            <div class="tp-team-content">
+                                <div class="tp-team-inner">
+                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Australia</a></h4>
+                                    <!-- <span>Consultant</span> -->
+                                </div>
+                                <div class="tp-team-social">
+                                    <div class="tp-team-btn">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia-ic.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tp-team-item">
+                            <div class="tp-team-thumb">
+                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/singapore.jpg" alt="">
+                            </div>
+                            <div class="tp-team-content">
+                                <div class="tp-team-inner">
+                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Europe</a></h4>
+                                    <!-- <span>Consultant</span> -->
+                                </div>
+                                <div class="tp-team-social">
+                                    <div class="tp-team-btn">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/Union-Flag-icon.png">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
-                <?php
-            }
-            ?>
+                <div class="tp-offer-nav text-center">
+                    <button type="button" class="team-button-prev-1" tabindex="0" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-096a1dd7797ad13b"><i
+                            class="fa-light fa-arrow-left"></i></i></button>
+                    <button type="button" class="team-button-next-1" tabindex="0" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-096a1dd7797ad13b"><i class="fa-light fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<?php endif; ?>
-<!--Portfolio End-->
+</section>
+<!-- team area end -->
 
-
-<!--Booking-Area Start-->
-<?php if($page_home_lang_independent['home_booking_status'] == 'Show'): ?>
-<div class="booking-area pt_60 pb_90" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_booking_photo']; ?>)">
-    <div class="bg-booking"></div>
-    <div class="container">
+<!-- categories area start -->
+<?php if($page_home_lang_independent['home_service_status'] == 'Show'): ?>
+<section class="tp-categories-area pt-100 pb-70 tp-categories-bg" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/categories/bg.png">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
-                <div class="booking-gallery">
-                    <div class="headline hl-white hl-left">
-                        <h2><?php echo $page_home['home_booking_form_title']; ?></h2>
-                    </div>
-                    <div class="booking-form pt_30">
-                        <?php echo form_open(base_url().'home/send_email',array('class' => '')); ?>
-                            <div class="form-row row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" name="first_name" placeholder="<?php echo FIRST_NAME; ?>">
+            <div class="col-lg-12">
+                <div class="tp-categories-title-wrapper text-center">
+                    <span class="tp-section-title-pre"><?php echo $page_home['home_service_title']; ?> <i class="flaticon-plane"></i></span>
+                    <h3 class="tp-section-title"><?php echo $page_home['home_service_subtitle']; ?></h3>
+                </div>
+            </div>
+        </div>
+        <div class="tp-categories-space wow visa-container fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="tp-visa-active swiper-container">
+                <div class="swiper-wrapper">
+                    <?php
+                        foreach ($services as $row) {
+                    ?>
+                    <div class="swiper-slide">
+                        <div class="tp-categories-item p-relative mb-45">
+                            <div class="tp-categories-item-inner">
+                                <div class="tp-categories-thumb">
+                                    <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="">
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" name="last_name" placeholder="<?php echo LAST_NAME; ?>">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" name="phone" placeholder="<?php echo PHONE_NUMBER; ?>">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" name="email" placeholder="<?php echo EMAIL_ADDRESS; ?>">
-                                </div>
-                                <div class="form-group col-12">
-                                    <input type="text" class="form-control" name="subject" placeholder="<?php echo SUBJECT; ?>">
-                                </div>
-                                <div class="form-group col-12">
-                                    <textarea class="form-control" name="message" placeholder="<?php echo MESSAGE; ?>"></textarea>
-                                </div>
-
-                                <div class="form-button col-12">
-                                    <button type="submit" class="btn btn2" name="form_quick_contact"><?php echo SUBMIT; ?></button>
+                                <div class="tp-categories-content p-relative">
+                                    <div class="tp-categories-icon">
+                                        <i><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt=""></i>
+                                    </div>
+                                    <h4 class="tp-categories-title"><a href="contact.html"><?php echo $row['name']; ?></a></h4>
+                                    <p><?php echo nl2br($row['short_description']); ?></p>
+                                    <div class="tp-categories-shape">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/shape-1.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                        <?php echo form_close(); ?>
+                            <div class="tp-categories-btn">
+                                <a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>">Enquiry Now<i class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- categories area end -->
+<?php endif; ?>
+
+<!-- categories area start -->
+<section class="tp-categories-2-arae pt-10 pb-50 p-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tp-categories-2-title-wrapper text-center mb-50">
+                    <span class="tp-section-title-pre-2">Coaching we offer</span>
+                    <h3 class="tp-section-title">Get the Best Trainings <br> You Deserve</h3>
+                    <p>Sponsoring and managing work visas parts now becoming results the experience<br>
+                        aute irure dolor in reprehenderit cepteur sint ocaecat cupidatate</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="tp-categories-2-thumb">
+                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS1.jpg" alt=""></a>
+                    </div>
+                    <div class="tp-categories-2-content p-relative text-center cate-box">
+                        <div class="tp-categories-2-icon text-center tour-icons">
+                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS-ic.png" alt=""></span>
+                        </div>
+                        <h4 class="tp-categories-title"><a href="contact.html">IELTS Coaching</a></h4>
+                        <p>Write a short description, that will you describe the title or something </p>
+
+                        <!-- <div class="tp-categories-2-content-shape">
+                              <img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/global.png" alt="">
+                           </div> -->
+                    </div>
+                    <div class="tp-categories-2-btn cate-btn-wrap">
+                        <a href="contact.html"><b>Enquiry Now</b><i class="fa-regular fa-arrow-right"></i>
+
+                        </a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-6">
-                <div class="faq-area faq-home mt_30">
-                    <div class="headline hl-white hl-left">
-                        <h2><?php echo $page_home['home_booking_faq_title']; ?></h2>
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="tp-categories-2-thumb">
+                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/PTE Coaching.jpg" alt=""></a>
                     </div>
-                    <div class="faq-group pt-30">
-                        <div id="accordion">
-                            <?php
-                            $i=0;
-                            foreach($home_faq as $row) {
-                                $i++;
-                                ?>
-                                <div class="faq-item card">
-                                    <div class="faq-header" id="heading<?php echo $i; ?>">
-                                        <button class="faq-button <?php if($i!=1) {echo 'collapsed';} ?>" data-toggle="collapse" data-target="#collapse<?php echo $i; ?>" aria-expanded="true" aria-controls="collapse<?php echo $i; ?>"><i class="fa fa-caret-right"></i><?php echo $row['faq_title']; ?></button>
-                                    </div>
+                    <div class="tp-categories-2-content p-relative text-center cate-box">
+                        <div class="tp-categories-2-icon text-center tour-icons">
+                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/pte-cao.png" alt=""></span>
+                        </div>
+                        <h4 class="tp-categories-title"><a href="contact.html">PTE Coaching</a></h4>
+                        <p>Write a short description, that will you describe the title or something </p>
 
-                                    <div id="collapse<?php echo $i; ?>" class="collapse" aria-labelledby="heading<?php echo $i; ?>" data-parent="#accordion">
-                                        <div class="faq-body">
-                                            <?php echo nl2br($row['faq_content']); ?>
+                        <!-- <div class="tp-categories-2-content-shape">
+                              <img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/global.png" alt="">
+                           </div> -->
+                    </div>
+                    <div class="tp-categories-2-btn cate-btn-wrap">
+                        <a href="contact.html"><b>Enquiry Now</b><i class="fa-regular fa-arrow-right"></i>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+                    <div class="tp-categories-2-thumb">
+                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/Duolingo Coaching.jpg" alt=""></a>
+                    </div>
+                    <div class="tp-categories-2-content p-relative text-center cate-box">
+                        <div class="tp-categories-2-icon text-center tour-icons">
+                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/DLo-ca.png" alt=""></span>
+                        </div>
+                        <h4 class="tp-categories-title"><a href="contact.html">DUOLINGO Coaching</a></h4>
+                        <p>Write a short description, that will you describe the title or something </p>
+                    </div>
+                    <div class="tp-categories-2-btn cate-btn-wrap">
+                        <a href="contact.html"><b>Enquiry Now</b><i class="fa-regular fa-arrow-right"></i>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- categories area end -->
+
+<!-- features area start -->
+<section class="tp-features-area feature-top-wrap pt-30 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-features-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                    <h3 class="tp-features-title">Visa Documents</h3>
+                    <p>Write a short description that will describe their visa process
+                    </p>
+                    <div class="tp-features-item-btn d-flex justify-content-between align-items-center">
+                        <a href="visa.html"><i class="fa-regular fa-arrow-right"></i>
+                            <b>Read More</b>
+                        </a>
+                        <span><i class="flaticon-documents"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-features-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3 class="tp-features-title">Immigration Process</h3>
+                    <p>Write a short description that will describe their visa process
+                    </p>
+                    <div class="tp-features-item-btn d-flex justify-content-between align-items-center">
+                        <a href="visa.html"><i class="fa-regular fa-arrow-right"></i>
+                            <b>Read More</b>
+                        </a>
+                        <span><i class="flaticon-passport"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="tp-features-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+                    <h3 class="tp-features-title">Apply for Visa</h3>
+                    <p>Write a short description that will describe their visa process
+                    </p>
+                    <div class="tp-features-item-btn d-flex justify-content-between align-items-center">
+                        <a href="visa.html"><i class="fa-regular fa-arrow-right"></i>
+                            <b>Read More</b>
+                        </a>
+                        <span><i class="flaticon-resume"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- features area end -->
+
+
+<!-- apply area start -->
+<section class="tp-apply-area pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="tp-apply-thumb-wrapper p-relative">
+                    <img src="<?php echo base_url(); ?>public/kalyan/assets/img/apply/apply-1.jpg" alt="">
+                    <div class="shape">
+                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/apply/shape-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tp-apply-wrapper">
+                    <div class="tp-apply-btn" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/apply/apply-2.png">
+                        <h4 class="tp-apply-title">Get Free Online Visa <br> Assessment!</h4>
+                        <a class="tp-btn" href="contact.html">Apply for Visa</a>
+                    </div>
+                    <div class="tp-apply-video">
+                        <p><strong>Special Discount on Coming Batches</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- apply area end -->
+
+
+
+<!-- testimonial area start -->
+<section class="tp-testimonial-2-area testimonial-wrapper pt-90 pb-90 p-relative" style="background-color: #f8f9fb;">
+    <div class="tp-testimonial-2-bg include-bg" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/tra-city.png"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tp-testimonial-2-title-wrapper text-center mb-50">
+                    <!-- <span class="tp-section-title-pre-2">OUR CLIENTS REVIEWS</span> -->
+                    <h3 class="tp-section-title">What Our Clients Say <br> About Visaho</h3>
+                    <p>Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis
+                        <br>lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa</p>
+                </div>
+            </div>
+        </div>
+        <div class="tp-testimonial-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <div class="tp-testimonial-active swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mb-30">
+                        <div class="tp-testimonial-2-item p-relative">
+                            <!-- <div class="tp-testimonial-2-item-shape">
+                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
+                              </div> -->
+                            <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
+                                <div class="tp-testimonial-2-left d-flex align-items-center">
+                                    <div class="tp-testimonial-2-thumb">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/img-1.png" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-2-avatar">
+
+                                        <div class="tp-testimonial-avata-info">
+                                            <h4 class="tp-testimonial-title">Robert Brunai</h4>
+                                            <span>Designer</span>
                                         </div>
                                     </div>
                                 </div>
-                                <?php
-                            }
-                            ?>
+
+                            </div>
+                            <div class="tp-testimonial-2-text">
+                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
+                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
+                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
+                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mb-30">
+                        <div class="tp-testimonial-2-item p-relative">
+                            <!-- <div class="tp-testimonial-2-item-shape">
+                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
+                              </div> -->
+                            <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
+                                <div class="tp-testimonial-2-left d-flex align-items-center">
+                                    <div class="tp-testimonial-2-thumb">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/testimonial-3.jpg" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-2-avatar">
+
+                                        <div class="tp-testimonial-avata-info">
+                                            <h4 class="tp-testimonial-title">Harry Newman</h4>
+                                            <span>Co Founder</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tp-testimonial-2-text">
+                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
+                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
+                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
+                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mb-30">
+                        <div class="tp-testimonial-2-item p-relative">
+                            <!-- <div class="tp-testimonial-2-item-shape">
+                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
+                              </div> -->
+                            <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
+                                <div class="tp-testimonial-2-left d-flex align-items-center">
+                                    <div class="tp-testimonial-2-thumb">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/testimonial-3.jpg" alt="">
+                                    </div>
+                                    <div class="tp-testimonial-2-avatar">
+
+                                        <div class="tp-testimonial-avata-info">
+                                            <h4 class="tp-testimonial-title">Harry Newman</h4>
+                                            <span>Co Founder</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tp-testimonial-2-text">
+                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
+                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
+                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
+                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tp-offer-nav text-center">
+                    <button type="button" class="test-button-prev-1" tabindex="0" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-a2101b9cd1686346e"><i
+                            class="fa-light fa-arrow-left"></i></i></button>
+                    <button type="button" class="test-button-next-1" tabindex="0" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-a2101b9cd1686346e"><i
+                            class="fa-light fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonial area end -->
+
+
+<!-- faq area start -->
+<section class="tp-faq-area p-relative pt-110 pb-50">
+    <div class="tp-faq-shape">
+        <img class="shape-1" src="<?php echo base_url(); ?>public/kalyan/assets/img/faq/shape-1.png" alt="">
+        <img class="shape-2" src="<?php echo base_url(); ?>public/kalyan/assets/img/faq/shape-2.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="tp-faq-thumb" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/faq/faq-1.jpg"></div>
+                <div class="tp-faq-counter d-lg-flex align-items-center d-none">
+                    <span><i class="flaticon-customer-service"></i></span>
+                    <div class="tp-faq-counter-content">
+                        <h4 class="tp-faq-counter-title">
+                            <span class="purecounter" data-purecounter-duration="3" data-purecounter-end="99"></span>+
+                        </h4>
+                        <p>Succesful Rates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="tp-faq-wrapper">
+                    <div class="tp-faq-title-wrapper wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                        <span class="tp-section-title-pre-2">our question & answer</span>
+                        <h3 class="tp-section-title">Frequently Asked <br> Question? </h3>
+                    </div>
+                    <div class="tp-faq-tab-content tp-accordion wow fadeInRight" data-wow-duration="1s"
+                        data-wow-delay=".3s">
+                        <div class="accordion" id="general_accordion">
+                            <div class="accordion-item home tp-faq-active">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne"><span>01.</span> Do you ever plan on returning to
+                                        your home country?</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#general_accordion">
+                                    <div class="accordion-body">
+                                        <p>If you are moving to work in the relevant country, you have to notify the
+                                            interviewer about the company, working details, how work location, etc. Any
+                                            suspicion may lead !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item home">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo"><span>02.</span>Where do you currently
+                                        live?</button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#general_accordion">
+                                    <div class="accordion-body">
+                                        <p>If you are moving to work in the relevant country, you have to notify the
+                                            interviewer about the company, working details, how work location, etc. Any
+                                            suspicion may lead !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item home">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree"><span>03.</span>Did you ever work in the country
+                                        without authorization?</button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#general_accordion">
+                                    <div class="accordion-body">
+                                        <p>If you are moving to work in the relevant country, you have to notify the
+                                            interviewer about the company, working details, how work location, etc. Any
+                                            suspicion may lead !</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item home">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour"><span>04.</span>Where else have you worked
+                                        before?</button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#general_accordion">
+                                    <div class="accordion-body">
+                                        <p>If you are moving to work in the relevant country, you have to notify the
+                                            interviewer about the company, working details, how work location, etc. Any
+                                            suspicion may lead !</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<?php endif; ?>
-<!--Booking-Area End-->
+</section>
+<!-- faq area end -->
 
 
-<!--Team-Area Start-->
-<?php if($page_home_lang_independent['home_team_status'] == 'Show'): ?>
-<div class="team-area pt_90 pb_90">
+<section class="custom-contact-wrapper pt-90 pb-90">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_team_title']; ?></h2>
-                    <h3><?php echo $page_home['home_team_subtitle']; ?></h3>
-                </div>
+                <p class="section--tag text--light">Enquire Now</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="team-carousel owl-carousel">
-                    <?php
-                    foreach ($team_members as $row) {
-                        ?>
-                        <div class="team-item">
-                            <div class="team-photo">
-                                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="Team Photo">
-                            </div>
-                            <div class="team-text">
-                                <a href="<?php echo base_url(); ?>team-member/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a>
-                                <p><?php echo $row['designation']; ?></p>
-                            </div>
-                            <div class="team-social">
-                                <ul>
-                                    <?php if($row['facebook'] != ''): ?>
-                                        <li><a href="<?php echo $row['facebook']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['twitter'] != ''): ?>
-                                        <li><a href="<?php echo $row['twitter']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['linkedin'] != ''): ?>
-                                        <li><a href="<?php echo $row['linkedin']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['youtube'] != ''): ?>
-                                        <li><a href="<?php echo $row['youtube']; ?>" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['google_plus'] != ''): ?>
-                                        <li><a href="<?php echo $row['google_plus']; ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['instagram'] != ''): ?>
-                                        <li><a href="<?php echo $row['instagram']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if($row['flickr'] != ''): ?>
-                                        <li><a href="<?php echo $row['flickr']; ?>" target="_blank"><i class="fa fa-flickr"></i></a></li>
-                                    <?php endif; ?>
-                                </ul>
+            <div class="col-lg-5">
+                <div class="form-left-content">
+                    <p>Not sure what you are looking for? Fill in the details to get a call-back.</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="th-contacts">
+                    <form role="form " action="" method="">
+                        <div class="row">
+                            <div class="col-12 mb-30">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" name="" placeholder="Full Name*"
+                                        required>
+                                    <span class="icon fa-thin fa-user"></span>
+                                </div>
                             </div>
                         </div>
-                        <?php
-                    }
-                    ?>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-30">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email Address*" required>
+                                    <span class="icon fa-thin fa-envelope"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-30">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="phone" name="phone"
+                                        placeholder="Mobile* (For otp)" required>
+                                    <span class="icon fa-thin fa-mobile"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 mb-30">
+                                <div class="form-group">
+                                    <select>
+                                        <option>Select Visa...</option>
+                                        <option>Canada Visa</option>
+                                        <option>USA Visa</option>
+                                        <option>Australia Visa</option>
+                                        <option>UK Visa</option>
+                                        <option>Work Visa</option>
+                                        <option>Student Visa</option>
+                                        <option>Tourist Visa</option>
+                                        <option>Business Visa</option>
+                                        <option>Other Visa</option>
+                                        <option>IELTS Classes</option>
+                                        <option>PTE Classes</option>
+                                        <option>DUOLINGO Classes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-12 text-end contact-btn">
+                                <button type="submit" class="btn btn-default">Submit Now <i
+                                        class="fa-light fa-arrow-right"></i></button>
+                            </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<?php endif; ?>
-<!--Team-Area End-->
+</section>
 
 
-<!--Price-Table Start-->
-<?php if($page_home_lang_independent['home_ptable_status'] == 'Show'): ?>
-<div class="price-area bg-area pt_90 pb_90">
-    <div class="container">
+<section class="contact-assist-wrap">
+    <div class="container pt-50 pb-50">
         <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_ptable_title']; ?></h2>
-                    <h3><?php echo $page_home['home_ptable_subtitle']; ?></h3>
-                </div>
+            <div class="col-12 assist-title">
+                <h4>We are here to assist you</h3>
             </div>
         </div>
-        <div class="row">
-            
-            <?php
-            foreach($pricing_table as $row) {
-                ?>
-                <div class="offset-md-2 col-md-8 offset-md-2 offset-lg-0 col-lg-4">
-                    <div class="price-item">
-                        <div class="price-header">
-                            <i class="<?php echo $row['icon']; ?>" aria-hidden="true"></i>
-                            <h3><?php echo $row['title']; ?></h3>
-                            <h2><?php echo $row['price']; ?></h2>
-                            <p><?php echo $row['subtitle']; ?></p>
-                        </div>
-                        <div class="price-body">
-                            <?php echo $row['text']; ?>
-                        </div>
-                        <div class="price-footer">
-                            <div class="button-df">
-                                <a href="<?php echo $row['button_url']; ?>"><?php echo $row['button_text']; ?> <i class="fa fa-chevron-circle-right"></i></a>
-                            </div>
-                        </div>
+        <div class="row pt-15">
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p>CANAM CONSULTANTS LTD</p>
+                        <span>SCO 83-84, Sector 17-D,<br>
+                            Chandigarh 160017,<br>
+                            India</span>
                     </div>
                 </div>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Price-Table End-->
+            </div>
 
-
-<!--Testomonial-Area Start-->
-<?php if($page_home_lang_independent['home_testimonial_status'] == 'Show'): ?>
-<div class="testimonial-area pt_90 pb_90" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>)">
-    <div class="bg-testimonial"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline hl-white">
-                    <h2><?php echo $page_home['home_testimonial_title']; ?></h2>
-                    <h3><?php echo $page_home['home_testimonial_subtitle']; ?></h3>
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-mobile"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p>1800 137 8055</p>
+                        <span>Monday - Saturday<br>10AM to 6PM IST</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="testimonial-carousel owl-carousel mt-30">
-
-                    <?php
-                    foreach ($testimonials as $row) {
-                        ?>
-                        <div class="testimonial-item">
-                            <div class="testimonial-photo">
-                                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="Cline Photo">
-                            </div>
-                            <div class="testimonial-name">
-                                <h4><?php echo $row['name']; ?></h4>
-                                <p><?php echo $row['designation']; ?></p>
-                            </div>
-                            <div class="testimonial-description">
-                                <p>
-                                    <?php echo nl2br($row['comment']); ?>
-                                </p>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-envelope"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p>info@canamgroup.com</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<?php endif; ?>
-<!--Testomonial-Area End-->
-
-
-<!--Blog-Area Start-->
-<?php if($page_home_lang_independent['home_blog_status'] == 'Show'): ?>
-<div class="blog-area pt_90 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="headline">
-                    <h2><?php echo $page_home['home_blog_title']; ?></h2>
-                    <h3><?php echo $page_home['home_blog_subtitle']; ?></h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="blog-carousel owl-carousel">                    
-                    <?php
-                    $i=0;
-                    foreach ($all_news_category as $news) {
-                        $i++;
-                        if($i > $page_home_lang_independent['home_blog_item']) {
-                            break;
-                        }
-                        $dt = explode('-',$news['news_date']);
-                        if($dt[1] == '01') {$month = 'Jan';}
-                        if($dt[1] == '02') {$month = 'Feb';}
-                        if($dt[1] == '03') {$month = 'Mar';}
-                        if($dt[1] == '04') {$month = 'Apr';}
-                        if($dt[1] == '05') {$month = 'May';}
-                        if($dt[1] == '06') {$month = 'Jun';}
-                        if($dt[1] == '07') {$month = 'Jul';}
-                        if($dt[1] == '08') {$month = 'Aug';}
-                        if($dt[1] == '09') {$month = 'Sep';}
-                        if($dt[1] == '10') {$month = 'Oct';}
-                        if($dt[1] == '11') {$month = 'Nov';}
-                        if($dt[1] == '12') {$month = 'Dec';}
-                        $year = $dt[0];
-                        $day = $dt[2];
-                        ?>
-                        <div class="blog-item effect-item">
-                            <a href="<?php echo base_url(); ?>news/view/<?php echo $news['news_id']; ?>" class="image-effect">
-                                <div class="blog-image" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $news['photo']; ?>)"></div>
-                            </a>
-                            <div class="blog-text">
-                                <h3><a href="<?php echo base_url(); ?>news/view/<?php echo $news['news_id']; ?>"><?php echo $news['news_title']; ?></a></h3>
-                                <span><i class="fa fa-calendar-o"></i><?php echo $month.' '.$day.', '.$year; ?></span>
-                                <p>
-                                    <?php echo $news['news_content_short']; ?>
-                                </p>
-                            </div>
-                            <div class="blog-author">
-                                <ul>
-                                    <li><a href="<?php echo base_url(); ?>category/<?php echo $news['category_id']; ?>"><i class="fa fa-pencil-square-o"></i><?php echo $news['category_name']; ?></a></li>
-                                    <li class="blog-button"><a href="<?php echo base_url(); ?>news/view/<?php echo $news['news_id']; ?>"><i class="fa fa-long-arrow-right"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php endif; ?>
-<!--Blog-Area End-->
-
-<!--Brand-Area Start-->
-<div class="brand-area bg-area pt_90 pb_90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="brand-carousel owl-carousel">
-                    <?php
-                    foreach($clients as $row) {
-                        ?>
-                        <?php if($row['url']!=''): ?>
-                            <div class="brand-item"><a href="<?php echo $row['url']; ?>"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>"></a></div>
-                        <?php else: ?>
-                            <div class="brand-item"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>"></div>
-                        <?php endif; ?>
-                        <?php
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Brand-Area End-->
+</section>

@@ -5,9 +5,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $error_message = '';
 $success_message = '';
 ?>
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
+   
+<!-- Mirrored from template.wphix.com/visaho-prev/visaho/index1-one-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Oct 2023 05:15:31 GMT -->
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -192,408 +197,206 @@ $success_message = '';
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/meanmenu.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/toastr.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/spacing.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/responsive.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/spacing.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/flaticon_visa_and_immigration.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>public/kalyan/assets/css/main.css">
 
     <?php if($_SESSION['sess_layout_direction'] == 'Right'): ?>
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/rtl.css">
     <?php endif; ?>
-
-    <!--Js-->
-    <script src="<?php echo base_url(); ?>public/js/jquery-2.2.4.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/popper.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/jquery-ui.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/owl.carousel.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/jquery.magnific-popup.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/jquery.meanmenu.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/jquery.filterizr.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/jquery.counterup.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/waypoints.min.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/viewportchecker.js"></script>
-    <script src="<?php echo base_url(); ?>public/js/toastr.min.js"></script>
-
-    <style>
-        .header-area,
-        ul.nav-menu li ul li a,
-        .searchbar .input-search,
-        .text-animated li a,
-        .slider-one .owl-nav .owl-prev, 
-        .slider-one .owl-nav .owl-next,
-        .about-tab:before,
-        .progress-gallery .bar-container .progress .progress-bar-custom,
-        .choose-item:before,
-        .feature-icon i,
-        .feature-item:hover .feature-text,
-        .bg-counterup,
-        .portfolio-bg,
-        .faq-header button.faq-button,
-        .faq-header button.faq-button.collapsed:hover,
-        .booking-area:before,
-        .bg-booking,
-        .team-carousel .owl-nav .owl-prev, 
-        .team-carousel .owl-nav .owl-next,
-        .team-text,
-        .team-social li a:hover,
-        .price-header i,
-        .button-df a,
-        .bg-testimonial,
-        .testimonial-carousel .owl-dots .owl-dot,
-        .blog-carousel .owl-nav .owl-prev, 
-        .blog-carousel .owl-nav .owl-next,
-        .blog-author li.blog-button a,
-        .call-us:before,
-        .footer-item h3:before,
-        .footer-item h3:after,
-        .footer-item .btn,
-        .footer-item ul.footer-social li a,
-        .scroll-top,
-        .headstyle h4:before,
-        .headstyle h4:after,
-        .team-detail-text ul li a,
-        .sidebar-item h3:before,
-        .sidebar-item h3:after,
-        .event-contact-item,
-        .gallery-bg,
-        .testimonial-grid .testimonial-description p:before, 
-        .testimonial-two-carousel .testimonial-description p:before,
-        .form-button .btn,
-        .project-carousel .owl-nav .owl-prev, 
-        .project-carousel .owl-nav .owl-next,
-        .sidebar-item button,
-        .contact-item:hover .contact-icon,
-        .contact-form .btn,
-        span.input-group-btn {
-            background: #<?php echo $setting['front_end_color']; ?>!important;
-        }
-
-        ul.nav-menu li:hover > a,
-        .searchbar .search-button:hover,
-        .text-animated li a:hover,
-        .text-animated li:last-child a:hover,
-        .slider-one .owl-nav .owl-prev:hover, 
-        .slider-one .owl-nav .owl-next:hover,
-        .feature-item:hover .feature-icon i,
-        .services-text a:hover,
-        .portfolio-menu li.filtr-active,
-        .portfolio-menu li:hover,
-        .portfolio-text h3 a:hover,
-        .form-button .btn2:hover,
-        .blog-item h3 a:hover,
-        .blog-item span i,
-        .blog-author li a i,
-        .blog-author li a:hover,
-        .call-us .button a:hover,
-        .footer-item ul li a:hover,
-        .team-info ul li span,
-        li.event-header-left i,
-        .recent-text a:hover,
-        .event-contact-item:hover .event-contact-icon,
-        .service-sidebar-item ul li a:hover,
-        .portfolio-details ul li span,
-        .sidebar-item ul li a:hover,
-        .blog-one-text h3 a:hover,
-        .blog-one-text ul li i,
-        .single-blog ul li i,
-        .contact-icon {
-            color: #<?php echo $setting['front_end_color']; ?>!important;   
-        }
-
-        .text-animated li a,
-        .slider-one .owl-nav .owl-prev, 
-        .slider-one .owl-nav .owl-next,
-        .feature-icon i,
-        .feature-item:hover .feature-text,
-        .footer-item .form-control,
-        .footer-item .btn,
-        .footer-item ul.footer-social li a,
-        .event-contact-item:hover .event-contact-icon,
-        .form-control:focus,
-        .sidebar-item button,
-        .contact-item:hover .contact-icon,
-        .contact-form .btn {
-            border-color: #<?php echo $setting['front_end_color']; ?>!important;      
-        }
-
-        .video-button span {
-            border-left-color: #<?php echo $setting['front_end_color']; ?>!important;         
-        }
-
-        .portfolio-menu li.filtr-active,
-        .team-social li a:hover {
-            border-bottom-color: #<?php echo $setting['front_end_color']; ?>!important;            
-        }
-
-        .portfolio-menu li.filtr-active:before,
-        .team-social li a:hover {
-            border-top-color: #<?php echo $setting['front_end_color']; ?>!important;               
-        }
-
-        ul.nav-menu li ul li:hover > a {
-            background: #f1f1f1!important;
-        }
-        .text-animated li a:hover,
-        .text-animated li:last-child a:hover,
-        .slider-one .owl-nav .owl-prev:hover, 
-        .slider-one .owl-nav .owl-next:hover {
-            background: #fff!important;
-            border-color: #fff!important;
-        }
-        .text-animated li:last-child a {
-            background: #313131!important;
-            border-color: #313131!important;
-        }
-        .blog-author li.blog-button a,
-        .blog-author li.blog-button i,
-        .footer-item ul.footer-social li a:hover,
-        .contact-item:hover .contact-icon {
-            color: #fff!important;
-        }
-        .feature-item:hover .feature-icon i,
-        .faq-header button.faq-button.collapsed {
-            background: #fff!important;
-        }
-        .team-carousel .owl-nav .owl-prev:hover, 
-        .team-carousel .owl-nav .owl-next:hover,
-        .blog-carousel .owl-nav .owl-prev:hover, 
-        .blog-carousel .owl-nav .owl-next:hover,
-        .button-df a:hover,
-        .testimonial-carousel .owl-dots .owl-dot.active,
-        .blog-author li.blog-button a:hover,
-        .footer-item ul.footer-social li a:hover,
-        .team-detail-text ul li a:hover,
-        .form-button .btn:hover,
-        .project-carousel .owl-nav .owl-prev:hover, 
-        .project-carousel .owl-nav .owl-next:hover,
-        .contact-form .btn:hover {
-            background: #313131!important;
-        }
-        .footer-item ul.footer-social li a:hover,
-        .contact-form .btn:hover {
-            border-color: #313131!important;
-        }
-        .event-contact-item:hover,
-        .faq-body,
-        .feature-item:hover .feature-icon i, .faq-header button.faq-button.collapsed {
-            background: #f5f5f5!important;
-        }
-
-        .booking-form input:focus,
-        .booking-form textarea:focus {
-            border-color: #fff!important;
-        }
-
-        .booking-form button[type="submit"] {
-            background: #313131!important;
-            color: #fff!important;
-        }
-
-        .booking-form button[type="submit"]:hover {
-            background: #fff!important;
-            color: #313131!important;
-        }
-    </style>
 
 </head>
 
 <body>
     
     <?php echo $comment['code_body']; ?>
-
-    <?php if($setting['preloader_status'] == 'On'): ?>
-    <!--Preloader Start-->
-    <div id="preloader">
-        <div id="status" style="background-image: url(<?php echo base_url(); ?>public/images/preloader.gif)"></div>
-    </div>
-    <!--Preloader End-->
-    <?php endif; ?>
-
-    <!--Header-Area Start-->
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-5 col-12">
-                    <div class="header-social">
-                        <ul>
-                            <li>
-                                <div class="social-bar">
-                                    <ul>
-                                        <?php
-                                        foreach ($social as $row)
-                                        {
-                                            if($row['social_url']!='')
-                                            {
-                                                echo '<li><a href="'.$row['social_url'].'"><i class="'.$row['social_icon'].'"></i></a></li>';
-                                            }
-                                        }
-                                        ?>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7 col-12">
-                    <div class="header-info">
-                        <ul class="first">
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <span><?php echo $setting['top_bar_email']; ?></span>
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <span><?php echo $setting['top_bar_phone']; ?></span>
-                            </li>
-                        </ul>
-
-                        <?php if($setting['language_status'] == 'Show'): ?>
-                        <div class="lang-right">
-                        <?php echo form_open(base_url().'lang/change'); ?>
-                            <select name="lang_change_id" class="form-control" onchange="this.form.submit()">
-                                <?php
-                                $all_language = $CI->Model_lang->show_all_language();
-                                foreach($all_language as $row)
-                                {
-                                    ?>
-                                    <option value="<?php echo $row['lang_id']; ?>" <?php if($row['lang_id'] == $_SESSION['sess_lang_id']) {echo 'selected';} ?>><?php echo $row['lang_short_name']; ?></option>
-                                    <?php
-                                }
-                                ?>
-                            </select>
-                        <?php echo form_close(); ?>
+        <!-- back to top start -->
+      <div class="back-to-top-wrapper">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+         </button>
+      </div>
+      <!-- back to top end -->
+    <!-- search area start -->
+    <div class="search-area">
+         <div class="search-inner p-relative">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                     <div class="search-wrapper">
+                        <div class="search-close">
+                           <button class="search-close-btn">
+                              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                           </button>
                         </div>
-                        <?php endif; ?>
-
-                    </div>
-                </div>
+                        <div class="search-content pt-35">
+                           <h3 class="heading text-center mb-30">Hi! How can we help You?</h3>
+                           <div class="d-flex justify-content-center px-5">
+                              <div class="search w-100 p-relative">
+                                 <input type="text" class="search-input" placeholder="Search...">
+                                 <button  class="search-icon">
+                                 <i class="fa fa-search"></i>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!--Header-Area End-->
+         </div>
+      </div>
+      <div class="search-overlay"></div>
+      <!-- search area end -->
 
-    <!--Menu Start-->
-    <div id="strickymenu" class="menu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
-                    <div class="logo flex">
-                        <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-12 main-menu">
-                    <div class="main-menu-item">
-                        <ul class="nav-menu">
-                            
-                            <?php
-                            $all_dynamic_pages = array();
-                            $all_dynamic_pages = $CI->Model_common->all_dynamic_pages();
-                            if(count($all_dynamic_pages) >= 1)
-                            {
-                                $d_page = 1;
-                            }
-                            else
-                            {
-                                $d_page = 0;
-                            }
-
-                            $arr_menu = array();
-                            $all_menu = $CI->Model_menu->show();
-                            foreach($all_menu as $row)
-                            {
-                                $arr_menu[$row['menu_id']] = $row['menu_status'];
-                            }
-                            ?>
-                            
-                            <?php if($arr_menu[1] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
-                            <?php endif; ?>
-                            
-                            <?php if($arr_menu[2] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
-                            <?php endif; ?>
-                            
-                            <?php if($arr_menu[3] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>team"><?php echo TEAM; ?></a></li>
-                            <?php endif; ?>                            
-
-                            <?php if( ($arr_menu[4] == 'Show') || ($arr_menu[5] == 'Show') || ($arr_menu[6] == 'Show') || ($arr_menu[7] == 'Show') || ($arr_menu[8] == 'Show') || ($d_page == 1) ): ?>
-                            <li class="menu-item-has-children"><a href="javascript:void;" class="chl"><?php echo PAGE; ?></a>
-                                <ul>
-                                    <?php if($arr_menu[4] == 'Show'): ?>
-                                    <li><a href="<?php echo base_url(); ?>event"><?php echo EVENT; ?></a></li>
-                                    <?php endif; ?>
-
-                                    <?php if($arr_menu[5] == 'Show'): ?>
-                                    <li><a href="<?php echo base_url(); ?>photo-gallery"><?php echo PHOTO_GALLERY; ?></a></li>
-                                    <?php endif; ?>
-                                    
-                                    <?php if($arr_menu[6] == 'Show'): ?>
-                                    <li><a href="<?php echo base_url(); ?>testimonial"><?php echo TESTIMONIAL; ?></a></li>
-                                    <?php endif; ?>
-
-                                    <?php if($arr_menu[7] == 'Show'): ?>
-                                    <li><a href="<?php echo base_url(); ?>faq"><?php echo FAQ; ?></a></li>
-                                    <?php endif; ?>
-
-                                    <?php if($arr_menu[8] == 'Show'): ?>
-                                    <li><a href="<?php echo base_url(); ?>pricing"><?php echo PRICING_TABLE; ?></a></li>
-                                    <?php endif; ?>
-
-                                    <?php if($d_page == 1): ?>
-                                        <?php
-                                        foreach($all_dynamic_pages as $rrr)
-                                        {
-                                            ?>
-                                            <li><a href="<?php echo base_url(); ?>page/<?php echo $rrr['slug']; ?>"><?php echo $rrr['name']; ?></a></li>
-                                            <?php
-                                        }
-                                        ?>
-                                    <?php endif; ?>
-                                </ul>
-                            </li>
-                            <?php endif; ?>
-
-                            <?php if($arr_menu[9] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a></li>
-                            <?php endif; ?>
-
-                            <?php if($arr_menu[10] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a></li>
-                            <?php endif; ?>
-
-                            <?php if($arr_menu[11] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>news"><?php echo NEWS; ?></a></li>
-                            <?php endif; ?>
-
-                            <?php if($arr_menu[12] == 'Show'): ?>
-                            <li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
-                            <?php endif; ?>
-
-                        </ul>
-                    </div>
-                    <div class="searchbar">
-                        <div class="search-button"><i class="fa fa-search"></i></div>
-                        <?php echo form_open(base_url().'search'); ?>
-                            <div class="input-group input-search">
-                                <input type="text" class="form-control" placeholder="<?php echo SEARCH_FOR; ?>" name="search_string">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit" name="form1"><i class="fa fa-search"></i></button>
-                                </span>
-                            </div>
-                        <?php echo form_close(); ?>
-                    </div>
-                </div>
+      <!-- offcanvas area start -->
+      <div class="offcanvas__area">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__close">
+               <button class="offcanvas__close-btn offcanvas-close-btn">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </button>
             </div>
-        </div>
-    </div>
-    <!--Menu End-->
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo logo">
+                     <a href="index.html">
+                        <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="logo">
+                     </a>
+                  </div>
+               </div>
+
+                  <div class="tp-main-menu-mobile fix d-xl-none mb-40"></div>
+               
+               <div class="offcanvas__contact">
+                  <h4 class="offcanvas__title">Contacts</h4>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
+                     </div>
+                  </div>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="https://template.wphix.com/cdn-cgi/l/email-protection#8fe1eaeaebe7eae3ffcfece0e2ffeee1f6a1ece0e2"> <span class="__cf_email__" data-cfemail="4c022929282429203c0c2f23213c2d2235622f2321">info@gmail.com</span>  </a>
+                     </div>
+                  </div>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-solid fa-phone"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="tel:01310-069824"> +92 666 888 0000</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="offcanvas__social">
+                  <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+                  <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="body-overlay"></div>
+      <!-- offcanvas area end -->
+
+      <!-- header area start -->
+      <header class="tp-header-area p-relative">
+         <div class="tp-header-main-sticky tp-header-main p-relative">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-2 col-md-3 col-4">
+                     <div class="tp-header-logo">
+                        <a href="index.html">
+                           <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 d-none d-lg-block text-end">
+                     
+                  </div>
+                  <div class="col-lg-3 col-md-9 col-8">
+                     <div class="tp-header-main-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-contact d-xl-flex align-items-center">
+                           <div class="tp-header-btn pl-10 d-none d-xl-block">
+                              <a class="tp-btn d-none d-xl-block" href="contact.html"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                           </div>
+                           <div class="tp-header-btn pl-10 d-none d-xl-block">
+                              <a class="tp-btn d-none d-xl-block" href="contact.html">Contact Us</a>
+                           </div>
+                           <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
+                              <button class="hamburger-btn">
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <header class="tp-header-area p-relative">
+         <div id="header-sticky" class="tp-header-sticky-onepage tp-header-main p-relative">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-2 col-md-3 col-4">
+                     <div class="tp-header-logo">
+                        <a href="index.html">
+                           <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 d-none d-lg-block text-end">
+                     
+                  </div>
+                  <div class="col-lg-3 col-md-9 col-8">
+                     <div class="tp-header-main-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-contact d-xl-flex align-items-center">
+                           <div class="tp-header-btn pl-10 d-none d-xl-block">
+                              <a class="tp-btn d-none d-xl-block" href="contact.html"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                           </div>
+                           <div class="tp-header-btn pl-10 d-none d-xl-block">
+                              <a class="tp-btn d-none d-xl-block" href="contact.html">Contact Us</a>
+                           </div>
+                           <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
+                              <button class="hamburger-btn">
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header area end -->
+
+      <main>
+        
