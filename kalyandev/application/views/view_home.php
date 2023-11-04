@@ -1,4 +1,5 @@
-<section class="main-parallex-wrapper" style="background-image: url('<?php echo base_url(); ?>public/kalyan/assets/img/hero/Banner-Image.jpg');">
+<section class="main-parallex-wrapper"
+    style="background-image: url('<?php echo base_url(); ?>public/kalyan/assets/img/hero/Banner-Image.jpg');">
     <div class="container p-relative">
         <div class="row justify-content-center">
             <div class="col-lg-10 hero-txt text-center">
@@ -38,7 +39,8 @@
                                 </div>
                                 <div class="tp-team-social">
                                     <div class="tp-team-btn">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/united-kingdom.png">
+                                        <img
+                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/united-kingdom.png">
                                     </div>
 
                                 </div>
@@ -99,7 +101,8 @@
                                 </div>
                                 <div class="tp-team-social">
                                     <div class="tp-team-btn">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia-ic.png">
+                                        <img
+                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia-ic.png">
                                     </div>
 
                                 </div>
@@ -119,7 +122,8 @@
                                 </div>
                                 <div class="tp-team-social">
                                     <div class="tp-team-btn">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/Union-Flag-icon.png">
+                                        <img
+                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/Union-Flag-icon.png">
                                     </div>
 
                                 </div>
@@ -145,12 +149,14 @@
 
 <!-- categories area start -->
 <?php if($page_home_lang_independent['home_service_status'] == 'Show'): ?>
-<section class="tp-categories-area pt-100 pb-70 tp-categories-bg" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/categories/bg.png">
+<section class="tp-categories-area pt-100 pb-70 tp-categories-bg"
+    data-background="<?php echo base_url(); ?>public/kalyan/assets/img/categories/bg.png">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="tp-categories-title-wrapper text-center">
-                    <span class="tp-section-title-pre"><?php echo $page_home['home_service_title']; ?> <i class="flaticon-plane"></i></span>
+                    <span class="tp-section-title-pre"><?php echo $page_home['home_service_title']; ?> <i
+                            class="flaticon-plane"></i></span>
                     <h3 class="tp-section-title"><?php echo $page_home['home_service_subtitle']; ?></h3>
                 </div>
             </div>
@@ -165,21 +171,26 @@
                         <div class="tp-categories-item p-relative mb-45">
                             <div class="tp-categories-item-inner">
                                 <div class="tp-categories-thumb">
-                                    <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="">
+                                    <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>"
+                                        alt="">
                                 </div>
                                 <div class="tp-categories-content p-relative">
                                     <div class="tp-categories-icon">
-                                        <i><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt=""></i>
+                                        <i><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>"
+                                                alt=""></i>
                                     </div>
-                                    <h4 class="tp-categories-title"><a href="contact.html"><?php echo $row['name']; ?></a></h4>
+                                    <h4 class="tp-categories-title"><a
+                                            href="contact.html"><?php echo $row['name']; ?></a></h4>
                                     <p><?php echo nl2br($row['short_description']); ?></p>
                                     <div class="tp-categories-shape">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/shape-1.png" alt="">
+                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/shape-1.png"
+                                            alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="tp-categories-btn">
-                                <a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>">Enquiry Now<i class="flaticon-right-arrow"></i></a>
+                                <a href="<?php echo base_url(); ?>service/view/<?php echo $row['id']; ?>">Enquiry Now<i
+                                        class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
                     </div>
@@ -209,11 +220,15 @@
             <div class="col-lg-4 col-md-6">
                 <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                     <div class="tp-categories-2-thumb">
-                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS1.jpg" alt=""></a>
+                        <a href="contact.html"><img
+                                src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS1.jpg"
+                                alt=""></a>
                     </div>
                     <div class="tp-categories-2-content p-relative text-center cate-box">
                         <div class="tp-categories-2-icon text-center tour-icons">
-                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS-ic.png" alt=""></span>
+                            <span><img
+                                    src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/IELTS-ic.png"
+                                    alt=""></span>
                         </div>
                         <h4 class="tp-categories-title"><a href="contact.html">IELTS Coaching</a></h4>
                         <p>Write a short description, that will you describe the title or something </p>
@@ -232,11 +247,15 @@
             <div class="col-lg-4 col-md-6">
                 <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="tp-categories-2-thumb">
-                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/PTE Coaching.jpg" alt=""></a>
+                        <a href="contact.html"><img
+                                src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/PTE Coaching.jpg"
+                                alt=""></a>
                     </div>
                     <div class="tp-categories-2-content p-relative text-center cate-box">
                         <div class="tp-categories-2-icon text-center tour-icons">
-                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/pte-cao.png" alt=""></span>
+                            <span><img
+                                    src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/pte-cao.png"
+                                    alt=""></span>
                         </div>
                         <h4 class="tp-categories-title"><a href="contact.html">PTE Coaching</a></h4>
                         <p>Write a short description, that will you describe the title or something </p>
@@ -255,11 +274,15 @@
             <div class="col-lg-4 col-md-6">
                 <div class="tp-categories-2-item mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                     <div class="tp-categories-2-thumb">
-                        <a href="contact.html"><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/Duolingo Coaching.jpg" alt=""></a>
+                        <a href="contact.html"><img
+                                src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/Duolingo Coaching.jpg"
+                                alt=""></a>
                     </div>
                     <div class="tp-categories-2-content p-relative text-center cate-box">
                         <div class="tp-categories-2-icon text-center tour-icons">
-                            <span><img src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/DLo-ca.png" alt=""></span>
+                            <span><img
+                                    src="<?php echo base_url(); ?>public/kalyan/assets/img/categories/home-2/DLo-ca.png"
+                                    alt=""></span>
                         </div>
                         <h4 class="tp-categories-title"><a href="contact.html">DUOLINGO Coaching</a></h4>
                         <p>Write a short description, that will you describe the title or something </p>
@@ -339,7 +362,8 @@
             </div>
             <div class="col-lg-6">
                 <div class="tp-apply-wrapper">
-                    <div class="tp-apply-btn" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/apply/apply-2.png">
+                    <div class="tp-apply-btn"
+                        data-background="<?php echo base_url(); ?>public/kalyan/assets/img/apply/apply-2.png">
                         <h4 class="tp-apply-title">Get Free Online Visa <br> Assessment!</h4>
                         <a class="tp-btn" href="contact.html">Apply for Visa</a>
                     </div>
@@ -353,111 +377,51 @@
 </section>
 <!-- apply area end -->
 
-
-
-<!-- testimonial area start -->
+<!--Testomonial-Area Start-->
+<?php if($page_home_lang_independent['home_testimonial_status'] == 'Show'): ?>
 <section class="tp-testimonial-2-area testimonial-wrapper pt-90 pb-90 p-relative" style="background-color: #f8f9fb;">
-    <div class="tp-testimonial-2-bg include-bg" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/tra-city.png"></div>
+    <div class="tp-testimonial-2-bg include-bg"
+        data-background="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="tp-testimonial-2-title-wrapper text-center mb-50">
-                    <!-- <span class="tp-section-title-pre-2">OUR CLIENTS REVIEWS</span> -->
-                    <h3 class="tp-section-title">What Our Clients Say <br> About Visaho</h3>
-                    <p>Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis
-                        <br>lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa</p>
+                    <h3 class="tp-section-title"><?php echo $page_home['home_testimonial_title']; ?></h3>
+                    <p><?php echo $page_home['home_testimonial_subtitle']; ?></p>
                 </div>
             </div>
         </div>
         <div class="tp-testimonial-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <div class="tp-testimonial-active swiper-container">
                 <div class="swiper-wrapper">
+                <?php
+                    foreach ($testimonials as $row) {
+                        ?>
                     <div class="swiper-slide mb-30">
                         <div class="tp-testimonial-2-item p-relative">
-                            <!-- <div class="tp-testimonial-2-item-shape">
-                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
-                              </div> -->
                             <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
                                 <div class="tp-testimonial-2-left d-flex align-items-center">
                                     <div class="tp-testimonial-2-thumb">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/img-1.png" alt="">
+                                        <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>"
+                                            alt="">
                                     </div>
                                     <div class="tp-testimonial-2-avatar">
 
                                         <div class="tp-testimonial-avata-info">
-                                            <h4 class="tp-testimonial-title">Robert Brunai</h4>
-                                            <span>Designer</span>
+                                            <h4 class="tp-testimonial-title"><?php echo $row['name']; ?></h4>
+                                            <span><?php echo $row['designation']; ?></span>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="tp-testimonial-2-text">
-                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
-                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
-                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
-                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
+                                <p><?php echo nl2br($row['comment']); ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide mb-30">
-                        <div class="tp-testimonial-2-item p-relative">
-                            <!-- <div class="tp-testimonial-2-item-shape">
-                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
-                              </div> -->
-                            <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
-                                <div class="tp-testimonial-2-left d-flex align-items-center">
-                                    <div class="tp-testimonial-2-thumb">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/testimonial-3.jpg" alt="">
-                                    </div>
-                                    <div class="tp-testimonial-2-avatar">
-
-                                        <div class="tp-testimonial-avata-info">
-                                            <h4 class="tp-testimonial-title">Harry Newman</h4>
-                                            <span>Co Founder</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="tp-testimonial-2-text">
-                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
-                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
-                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
-                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide mb-30">
-                        <div class="tp-testimonial-2-item p-relative">
-                            <!-- <div class="tp-testimonial-2-item-shape">
-                                 <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/home-2/shape.png" alt="">
-                              </div> -->
-                            <div class="tp-testimonial-2-content d-flex justify-content-between align-items-center">
-                                <div class="tp-testimonial-2-left d-flex align-items-center">
-                                    <div class="tp-testimonial-2-thumb">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/review/testimonial-3.jpg" alt="">
-                                    </div>
-                                    <div class="tp-testimonial-2-avatar">
-
-                                        <div class="tp-testimonial-avata-info">
-                                            <h4 class="tp-testimonial-title">Harry Newman</h4>
-                                            <span>Co Founder</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="tp-testimonial-2-text">
-                                <p>At sagittis congue augue egestas undo magna ipsum vitae purus ipsum primis in cubilia
-                                    laoreet augue ociis at nullam tempor sapien gravida porta integer at odio velna
-                                    auctor. An augue in cubilia laoreet magna suscipit egestas magna ipsum vitae purus
-                                    ipsum primis cubilia laoreet augue ultrice ligula egestas </p>
-                            </div>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </div>
-
                 <div class="tp-offer-nav text-center">
                     <button type="button" class="test-button-prev-1" tabindex="0" aria-label="Previous slide"
                         aria-controls="swiper-wrapper-a2101b9cd1686346e"><i
@@ -466,13 +430,12 @@
                         aria-controls="swiper-wrapper-a2101b9cd1686346e"><i
                             class="fa-light fa-arrow-right"></i></button>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
-<!-- testimonial area end -->
-
+<?php endif; ?>
+<!--Testomonial-Area End-->
 
 <!-- faq area start -->
 <section class="tp-faq-area p-relative pt-110 pb-50">
@@ -483,7 +446,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <div class="tp-faq-thumb" data-background="<?php echo base_url(); ?>public/kalyan/assets/img/faq/faq-1.jpg"></div>
+                <div class="tp-faq-thumb"
+                    data-background="<?php echo base_url(); ?>public/kalyan/assets/img/faq/faq-1.jpg"></div>
                 <div class="tp-faq-counter d-lg-flex align-items-center d-none">
                     <span><i class="flaticon-customer-service"></i></span>
                     <div class="tp-faq-counter-content">
