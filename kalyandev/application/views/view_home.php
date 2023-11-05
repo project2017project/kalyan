@@ -381,7 +381,8 @@
 <?php if($page_home_lang_independent['home_testimonial_status'] == 'Show'): ?>
 <section class="tp-testimonial-2-area testimonial-wrapper pt-90 pb-90 p-relative" style="background-color: #f8f9fb;">
     <div class="tp-testimonial-2-bg include-bg"
-        data-background="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>"></div>
+        data-background="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -394,7 +395,7 @@
         <div class="tp-testimonial-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <div class="tp-testimonial-active swiper-container">
                 <div class="swiper-wrapper">
-                <?php
+                    <?php
                     foreach ($testimonials as $row) {
                         ?>
                     <div class="swiper-slide mb-30">
@@ -468,26 +469,29 @@
                     <div class="tp-faq-tab-content tp-accordion wow fadeInRight" data-wow-duration="1s"
                         data-wow-delay=".3s">
                         <div class="accordion" id="general_accordion">
-                               <?php
+                            <?php
                             $i=0;
                             foreach($home_faq as $row) {
                                 $i++;
                                 ?>
-                              <div class="accordion-item home <?php if($i!=1) {echo 'tp-faq-active';} ?>">
+                            <div class="accordion-item home <?php if($i!=1) {echo 'tp-faq-active';} ?>">
                                 <h2 class="accordion-header" id="heading<?php echo $i; ?>">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $i; ?>" aria-expanded="false" aria-controls="collapseTwo"><span>0<?php echo $i; ?>.</span><?php echo $row['faq_title']; ?></button>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse<?php echo $i; ?>" aria-expanded="false"
+                                        aria-controls="collapseTwo"><span>0<?php echo $i; ?>.</span><?php echo $row['faq_title']; ?></button>
                                 </h2>
-                                <div id="collapse<?php echo $i; ?>" class="accordion-collapse collapse <?php if($i==1) {echo 'show';} ?>" aria-labelledby="heading<?php echo $i; ?>" data-bs-parent="#general_accordion">
-                                  <div class="accordion-body">
-                                    <p><?php echo nl2br($row['faq_content']); ?></p>
-                                  </div>
+                                <div id="collapse<?php echo $i; ?>"
+                                    class="accordion-collapse collapse <?php if($i==1) {echo 'show';} ?>"
+                                    aria-labelledby="heading<?php echo $i; ?>" data-bs-parent="#general_accordion">
+                                    <div class="accordion-body">
+                                        <p><?php echo nl2br($row['faq_content']); ?></p>
+                                    </div>
                                 </div>
-                              </div>
-                              <?php
+                            </div>
+                            <?php
                             }
                             ?>
-
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -328,7 +328,7 @@ $success_message = '';
                <div class="row align-items-center">
                   <div class="col-lg-2 col-md-3 col-4">
                      <div class="tp-header-logo">
-                        <a href="index.html">
+                        <a href="<?php echo base_url(); ?>">
                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="">
                         </a>
                      </div>
@@ -340,10 +340,10 @@ $success_message = '';
                      <div class="tp-header-main-right d-flex align-items-center justify-content-end">
                         <div class="tp-header-contact d-xl-flex align-items-center">
                            <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="contact.html"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
                            </div>
                            <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="contact.html">Contact Us</a>
+                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
                            </div>
                            <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
                               <button class="hamburger-btn">
@@ -365,7 +365,7 @@ $success_message = '';
                <div class="row align-items-center">
                   <div class="col-lg-2 col-md-3 col-4">
                      <div class="tp-header-logo">
-                        <a href="index.html">
+                        <a href="<?php echo base_url(); ?>">
                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="">
                         </a>
                      </div>
@@ -377,10 +377,10 @@ $success_message = '';
                      <div class="tp-header-main-right d-flex align-items-center justify-content-end">
                         <div class="tp-header-contact d-xl-flex align-items-center">
                            <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="contact.html"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
                            </div>
                            <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="contact.html">Contact Us</a>
+                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
                            </div>
                            <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
                               <button class="hamburger-btn">
