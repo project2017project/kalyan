@@ -381,7 +381,8 @@
 <?php if($page_home_lang_independent['home_testimonial_status'] == 'Show'): ?>
 <section class="tp-testimonial-2-area testimonial-wrapper pt-90 pb-90 p-relative" style="background-color: #f8f9fb;">
     <div class="tp-testimonial-2-bg include-bg"
-        data-background="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>"></div>
+        data-background="<?php echo base_url(); ?>public/uploads/<?php echo $page_home_lang_independent['home_testimonial_photo']; ?>">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -394,7 +395,7 @@
         <div class="tp-testimonial-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <div class="tp-testimonial-active swiper-container">
                 <div class="swiper-wrapper">
-                <?php
+                    <?php
                     foreach ($testimonials as $row) {
                         ?>
                     <div class="swiper-slide mb-30">
@@ -438,6 +439,7 @@
 <!--Testomonial-Area End-->
 
 <!-- faq area start -->
+<?php if($page_home_lang_independent['home_booking_status'] == 'Show'): ?>
 <section class="tp-faq-area p-relative pt-110 pb-50">
     <div class="tp-faq-shape">
         <img class="shape-1" src="<?php echo base_url(); ?>public/kalyan/assets/img/faq/shape-1.png" alt="">
@@ -461,76 +463,34 @@
             <div class="col-lg-7">
                 <div class="tp-faq-wrapper">
                     <div class="tp-faq-title-wrapper wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                        <span class="tp-section-title-pre-2">our question & answer</span>
-                        <h3 class="tp-section-title">Frequently Asked <br> Question? </h3>
+                        <span class="tp-section-title-pre-2"><?php echo $page_home['home_booking_form_title']; ?></span>
+                        <h3 class="tp-section-title"><?php echo $page_home['home_booking_faq_title']; ?></h3>
                     </div>
                     <div class="tp-faq-tab-content tp-accordion wow fadeInRight" data-wow-duration="1s"
                         data-wow-delay=".3s">
                         <div class="accordion" id="general_accordion">
-                            <div class="accordion-item home tp-faq-active">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne"><span>01.</span> Do you ever plan on returning to
-                                        your home country?</button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#general_accordion">
-                                    <div class="accordion-body">
-                                        <p>If you are moving to work in the relevant country, you have to notify the
-                                            interviewer about the company, working details, how work location, etc. Any
-                                            suspicion may lead !</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item home">
-                                <h2 class="accordion-header" id="headingTwo">
+                            <?php
+                            $i=0;
+                            foreach($home_faq as $row) {
+                                $i++;
+                                ?>
+                            <div class="accordion-item home <?php if($i!=1) {echo 'tp-faq-active';} ?>">
+                                <h2 class="accordion-header" id="heading<?php echo $i; ?>">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo"><span>02.</span>Where do you currently
-                                        live?</button>
+                                        data-bs-target="#collapse<?php echo $i; ?>" aria-expanded="false"
+                                        aria-controls="collapseTwo"><span>0<?php echo $i; ?>.</span><?php echo $row['faq_title']; ?></button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#general_accordion">
+                                <div id="collapse<?php echo $i; ?>"
+                                    class="accordion-collapse collapse <?php if($i==1) {echo 'show';} ?>"
+                                    aria-labelledby="heading<?php echo $i; ?>" data-bs-parent="#general_accordion">
                                     <div class="accordion-body">
-                                        <p>If you are moving to work in the relevant country, you have to notify the
-                                            interviewer about the company, working details, how work location, etc. Any
-                                            suspicion may lead !</p>
+                                        <p><?php echo nl2br($row['faq_content']); ?></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item home">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree"><span>03.</span>Did you ever work in the country
-                                        without authorization?</button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#general_accordion">
-                                    <div class="accordion-body">
-                                        <p>If you are moving to work in the relevant country, you have to notify the
-                                            interviewer about the company, working details, how work location, etc. Any
-                                            suspicion may lead !</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item home">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour"><span>04.</span>Where else have you worked
-                                        before?</button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#general_accordion">
-                                    <div class="accordion-body">
-                                        <p>If you are moving to work in the relevant country, you have to notify the
-                                            interviewer about the company, working details, how work location, etc. Any
-                                            suspicion may lead !</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -538,6 +498,7 @@
         </div>
     </div>
 </section>
+<?php endif; ?>
 <!-- faq area end -->
 
 

@@ -1,112 +1,118 @@
-<!--Banner Start-->
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_contact']; ?>)">
-    <div class="bg"></div>
-    <div class="bannder-table">
-        <div class="banner-text">
-            <h1><?php echo $page_contact['contact_heading']; ?></h1>
-        </div>
-    </div>
-</div>
-<!--Banner End-->
-
-<!--Contact Start-->
-<div class="contact-area pt_60 pb_90">
+<section class="custom-contact-wrapper pt-90 pb-90">
     <div class="container">
         <div class="row">
-            <div class="col-xl-4 col-md-6">
-                <div class="contact-item flex">
-                    <div class="contact-icon">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4><?php echo ADDRESS; ?></h4>
-                        <p>
-                            <?php echo nl2br($page_contact['contact_address']); ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="contact-item flex">
-                    <div class="contact-icon">
-                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4><?php echo PHONE_NUMBER; ?></h4>
-                        <p>
-                            <?php echo nl2br($page_contact['contact_phone']); ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="contact-item flex">
-                    <div class="contact-icon">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4><?php echo EMAIL_ADDRESS; ?></h4>
-                        <p>
-                            <?php echo nl2br($page_contact['contact_email']); ?>
-                        </p>
-                    </div>
-                </div>
+            <div class="col-12">
+                <p class="section--tag text--light">Enquire Now</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <div class="contact-form headstyle pt_90">
-                    <h4><?php echo CONTACT_FORM; ?></h4>
+            <div class="col-lg-5">
+                <div class="form-left-content">
+                    <p>Not sure what you are looking for? Fill in the details to get a call-back.</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="th-contacts">
                     <?php echo form_open(base_url().'contact/send_email',array('class' => '')); ?>
-                        <div class="form-row row">
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="<?php echo NAME; ?>" name="name">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="<?php echo PHONE_NUMBER; ?>" name="phone">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="<?php echo EMAIL_ADDRESS; ?>" name="email">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="<?php echo SUBJECT; ?>" name="subject">
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea class="form-control" placeholder="<?php echo MESSAGE; ?>" name="message"></textarea>
-                            </div>
-
-                            <?php if($check_captcha['captcha_contact'] == 'Show'): ?>
-                            <div class="form-group col-12">
-                                <?php
-                                $CI =& get_instance();
-                                $CI->load->model('Model_contact');
-                                $r_serial = mt_rand(1, $total_captcha);
-                                $captcha_one = $CI->Model_contact->get_particular_captcha($r_serial);
-                                ?>
-                                <div class="captcha-section-1">
-                                    <?php echo $captcha_one['captcha_value1'].' '.$captcha_one['captcha_symbol'].' '.$captcha_one['captcha_value2'].' = ' ?>
+                        <div class="row">
+                            <div class="col-12 mb-30">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" name="" placeholder="Full Name*" required>
+                                    <span class="icon fa-thin fa-user"></span>
                                 </div>
-                                <div class="captcha-section-2">
-                                    <input type="hidden" name="r_serial" value="<?php echo $r_serial; ?>">
-                                    <input type="text" class="form-control w-60" name="captcha_input">
-                                </div>
-                            </div>
-                            <?php endif; ?>
-
-                            <div class="form-group col-12">
-                                <button type="submit" class="btn" name="form_contact"><?php echo SEND_MESSAGE; ?></button>
                             </div>
                         </div>
-                    <?php echo form_close(); ?>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-30">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address*" required>
+                                    <span class="icon fa-thin fa-envelope"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-30">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="phone" name="phone" placeholder="Mobile* (For otp)" required>
+                                    <span class="icon fa-thin fa-mobile"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 mb-30">
+                                <div class="form-group">
+                                    <select>
+                                        <option>Select Visa...</option>
+                                        <option>Canada Visa</option>
+                                        <option>USA Visa</option>
+                                        <option>Australia Visa</option>
+                                        <option>UK Visa</option>
+                                        <option>Work Visa</option>
+                                        <option>Student Visa</option>
+                                        <option>Tourist Visa</option>
+                                        <option>Business Visa</option>
+                                        <option>Other Visa</option>
+                                        <option>IELTS Classes</option>
+                                        <option>PTE Classes</option>
+                                        <option>DUOLINGO Classes</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-end contact-btn">
+                            <button type="submit" class="btn btn-default">Submit Now <i
+                                    class="fa-light fa-arrow-right"></i></button>
+                        </div>
+<?php echo form_close(); ?>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--Contact End-->
+</section>
 
-<!--Map Start-->
-<div class="map-area">
-    <?php echo $page_contact['contact_map']; ?>
-</div>
-<!--Map End-->
+<section class="contact-assist-wrap">
+    <div class="container pt-50 pb-50">
+        <div class="row">
+            <div class="col-12 assist-title">
+                <h4>We are here to assist you</h3>
+            </div>
+        </div>
+        <div class="row pt-15">
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-location-dot"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p>CANAM CONSULTANTS LTD</p>
+                        <span><?php echo nl2br($page_contact['contact_address']); ?></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-mobile"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p><?php echo nl2br($page_contact['contact_phone']); ?></p>
+                        <span>Monday - Saturday<br>10AM to 6PM IST</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-20">
+                <div class="assist-box-inner">
+                    <div class="assist-icon">
+                        <i class="fa-light fa-envelope"></i>
+                    </div>
+                    <div class="assist-content">
+                        <p><?php echo nl2br($page_contact['contact_email']); ?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
