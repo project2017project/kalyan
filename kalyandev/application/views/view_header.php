@@ -8,7 +8,6 @@ $success_message = '';
 <!doctype html>
 <html class="no-js" lang="zxx">
    
-<!-- Mirrored from template.wphix.com/visaho-prev/visaho/index1-one-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Oct 2023 05:15:31 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -216,7 +215,7 @@ $success_message = '';
 <body>
     
     <?php echo $comment['code_body']; ?>
-        <!-- back to top start -->
+       <!-- back to top start -->
       <div class="back-to-top-wrapper">
          <button id="back_to_top" type="button" class="back-to-top-btn">
             <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,8 +224,9 @@ $success_message = '';
          </button>
       </div>
       <!-- back to top end -->
-    <!-- search area start -->
-    <div class="search-area">
+   
+     <!-- search area start -->
+      <div class="search-area">
          <div class="search-inner p-relative">
             <div class="container">
                <div class="row justify-content-center">
@@ -260,7 +260,7 @@ $success_message = '';
       <div class="search-overlay"></div>
       <!-- search area end -->
 
-      <!-- offcanvas area start -->
+       <!-- offcanvas area start -->
       <div class="offcanvas__area">
          <div class="offcanvas__wrapper">
             <div class="offcanvas__close">
@@ -274,7 +274,7 @@ $success_message = '';
             <div class="offcanvas__content">
                <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
                   <div class="offcanvas__logo logo">
-                     <a href="index.html">
+                     <a href="<?php echo base_url(); ?>">
                         <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="logo">
                      </a>
                   </div>
@@ -289,23 +289,24 @@ $success_message = '';
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                      </div>
                      <div class="offcanvas__contact-content-content">
-                        <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
+                        <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">SCO 142, Feroz Gandhi Market, Modal Gram, Ludhiana 14001</a>
                      </div>
                   </div>
-                  <div class="offcanvas__contact-content d-flex">
-                     <div class="offcanvas__contact-content-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                     </div>
-                     <div class="offcanvas__contact-content-content">
-                        <a href="https://template.wphix.com/cdn-cgi/l/email-protection#8fe1eaeaebe7eae3ffcfece0e2ffeee1f6a1ece0e2"> <span class="__cf_email__" data-cfemail="4c022929282429203c0c2f23213c2d2235622f2321">info@gmail.com</span>  </a>
-                     </div>
-                  </div>
+                 
                   <div class="offcanvas__contact-content d-flex">
                      <div class="offcanvas__contact-content-icon">
                         <i class="fa-solid fa-phone"></i>
                      </div>
                      <div class="offcanvas__contact-content-content">
-                        <a href="tel:01310-069824"> +92 666 888 0000</a>
+                        <a href="javascript:void(0)"> <?php echo ($setting['top_bar_phone']); ?></a>
+                     </div>
+                  </div>
+                   <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-light fa-envelope-open-text"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                         <a href="javascript:void(0)"><span class="__cf_email__"><?php echo ($setting['top_bar_email']); ?></span></a>
                      </div>
                   </div>
                </div>
@@ -323,6 +324,27 @@ $success_message = '';
 
       <!-- header area start -->
       <header class="tp-header-area p-relative">
+       <div class="tp-header-top d-none d-xl-block fix">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6">
+                     <div class="tp-header-top-info">
+                        <a href="https://www.google.com/maps" target="_blank"><span><i class="fa-sharp fa-solid fa-location-dot"></i></span>SCO 142, Feroz Gandhi Market, Modal Gram, Ludhiana 14001</a>
+                        
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="tp-header-top-right d-flex justify-content-end">
+                        <div class="tp-header-top-info">
+                         <a href="javascript:void(0)"><span><i class="fa-solid fa-phone"></i></span> <span class="__cf_email__" ><?php echo ($setting['top_bar_phone']); ?></span></a>
+                         <a href="javascript:void(0)"><span><i class="fa-light fa-envelope-open-text"></i></span> <span class="__cf_email__" ><?php echo ($setting['top_bar_email']); ?></span></a>
+                      
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> 
          <div class="tp-header-main-sticky tp-header-main p-relative">
             <div class="container">
                <div class="row align-items-center">
@@ -333,27 +355,58 @@ $success_message = '';
                         </a>
                      </div>
                   </div>
-                  <div class="col-lg-7 d-none d-lg-block text-end">
-                     
+                  <div class="col-lg-10 d-none d-lg-block text-end">
+                     <div class="tp-header-main-menu">
+                        <div class="tp-main-menu d-none d-xl-block">
+                           <nav class="tp-main-menu-content">
+                              <ul class="tp-onepage-menu">
+                                 <li>
+                                    <a href="index.html">Home</a>                                  
+                                 </li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li class="has-dropdown"><a href="classess.html">Classes</a>
+                                    <ul class="submenu">
+                                       <li><a href="javascript:void(0)">IELTS Classes</a></li>
+                                       <li><a href="javascript:void(0)">PET Classes</a></li>
+                                       <li><a href="javascript:void(0)">TOEFL Classes</a></li>
+                                       <li><a href="javascript:void(0)">Duolingo Classes</a></li>
+                                       <li><a href="javascript:void(0)">Free Demo Class</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown"><a href="visa-service.html">Visa Services</a>
+                                     <ul class="submenu">
+                                       <li><a href="javascript:void(0)">All Visa</a></li>
+                                       <li><a href="javascript:void(0)">Study Visa</a></li>
+                                       <li><a href="javascript:void(0)">Business Visa</a></li>
+                                       <li><a href="javascript:void(0)">Tourist Visa</a></li>
+                                       <li><a href="javascript:void(0)">Work Visa</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown"><a href="university.html">Universities</a>
+                                     <ul class="submenu">
+                                       <li><a href="javascript:void(0)">Study in USA</a></li>
+                                       <li><a href="javascript:void(0)">Study in Canada</a></li>
+                                       <li><a href="javascript:void(0)">Study in Australia</a></li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="stories.html">Success Stories</a></li>
+                                 <li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+                                 <li><a href="band-calculator.html">Band Calculator</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                         
+                     </div> 
                   </div>
-                  <div class="col-lg-3 col-md-9 col-8">
-                     <div class="tp-header-main-right d-flex align-items-center justify-content-end">
-                        <div class="tp-header-contact d-xl-flex align-items-center">
-                           <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-                           </div>
-                           <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
-                           </div>
-                           <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
+                  
+                  <div class="col-8 d-lg-none">
+                     <div class="tp-header-hamburger d-xl-none offcanvas-open-btn text-end">
                               <button class="hamburger-btn">
                                  <span></span>
                                  <span></span>
                                  <span></span>
                               </button>
                            </div>
-                        </div>
-                     </div>
                   </div>
                </div>
             </div>
@@ -370,27 +423,58 @@ $success_message = '';
                         </a>
                      </div>
                   </div>
-                  <div class="col-lg-7 d-none d-lg-block text-end">
-                     
+                  <div class="col-lg-10 d-none d-lg-block text-end">
+                     <div class="tp-header-main-menu">
+                        <div class="tp-main-menu d-none d-xl-block">
+                          <nav class="tp-main-menu-content">
+                              <ul class="tp-onepage-menu">
+                                 <li>
+                                    <a href="#hero">Home</a>                                   
+                                 </li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li class="has-dropdown"><a href="classess.html">Classes</a>
+                                    <ul class="submenu">
+                                       <li><a href="javascript:void(0)">IELTS Classes</a></li>
+                                       <li><a href="javascript:void(0)">PET Classes</a></li>
+                                       <li><a href="javascript:void(0)">TOEFL Classes</a></li>
+                                       <li><a href="javascript:void(0)">Duolingo Classes</a></li>
+                                       <li><a href="javascript:void(0)">Free Demo Class</a></li>
+                                    </ul>
+                                 </li>
+                                 <li class="has-dropdown"><a href="visa-service.html">Visa Services</a>
+                                     <ul class="submenu">
+                                       <li><a href="javascript:void(0)">All Visa</a></li>
+                                       <li><a href="javascript:void(0)">Study Visa</a></li>
+                                       <li><a href="javascript:void(0)">Business Visa</a></li>
+                                       <li><a href="javascript:void(0)">Tourist Visa</a></li>
+                                       <li><a href="javascript:void(0)">Work Visa</a></li>
+                                    </ul>
+                                 </li>
+
+                                 <li class="has-dropdown"><a href="university.html">Universities</a>
+                                     <ul class="submenu">
+                                       <li><a href="javascript:void(0)">Study in USA</a></li>
+                                       <li><a href="javascript:void(0)">Study in Canada</a></li>
+                                       <li><a href="javascript:void(0)">Study in Australia</a></li>
+                                    </ul>
+                                 </li>
+                                 <li><a href="stories.html">Success Stories</a></li>
+                                 <li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+                                 <li><a href="band-calculator.html">Band Calculator</a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-9 col-8">
-                     <div class="tp-header-main-right d-flex align-items-center justify-content-end">
-                        <div class="tp-header-contact d-xl-flex align-items-center">
-                           <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-                           </div>
-                           <div class="tp-header-btn pl-10 d-none d-xl-block">
-                              <a class="tp-btn d-none d-xl-block" href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
-                           </div>
-                           <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
+                  
+                  <div class="col-8 d-lg-none">
+                     <div class="tp-header-hamburger d-xl-none offcanvas-open-btn text-end">
                               <button class="hamburger-btn">
                                  <span></span>
                                  <span></span>
                                  <span></span>
                               </button>
                            </div>
-                        </div>
-                     </div>
                   </div>
                </div>
             </div>

@@ -1,151 +1,59 @@
-<section class="main-parallex-wrapper"
-    style="background-image: url('<?php echo base_url(); ?>public/kalyan/assets/img/hero/Banner-Image.jpg');">
-    <div class="container p-relative">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 hero-txt text-center">
-
-                <h4 class="h4-xs">We have 20+ years experience in</h4>
-                <h2>US VISA Guidance Made Easy</h2>
-
-                <p class="p-md">Feugiat primis ligula risus auctor egestas augue mauri viverra tortor in iaculis and
-                    placerat purus feugiat primis ultrice in ligula impedit magna purus pretium neque ligula</p>
-
-                <div class="parallex-list">
-                    <ul>
-                        <li><i class="fa-solid fa-circle-check"></i><span>No Interviews</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i><span>Relocate in 30 Days</span></li>
-                        <li><i class="fa-solid fa-circle-check"></i><span>Afforable Fee</span></li>
-                    </ul>
-                </div>
+<section class="banner-form-wrapper">
+            <div class="container p-relative">
+               <div class="row justify-content-center">
+                  <div class="col-lg-12  hero-txt text-center">
+                                                
+                        <h4 class="h4-xs">Start Planning Your New Dream</h4>
+                           <h2>Travel and immigrate with kalyan Overseas</h2>
+                        <p class="p-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud</p> 
+                            
+                       
+                        <div class="banner-form mt-70">
+                        <form>
+                  <div class="row d-flex align-items-end">
+                    <div class="col-lg-9">
+                       <div class="row">
+                          <div class="col-lg-3 col-md-6 mb-15">
+                             <label>Name*</label>
+                             <input type="text" name="" placeholder="Enter Your Name" class="form-control">
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-15">
+                             <label>Phone*</label>
+                             <input type="text" name="" placeholder="Enter Your Phone No." class="form-control">
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-15">
+                             <label>Your Need*</label>
+                             <select class="form-control">
+                                <option>Choose Category</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                             </select>
+                          </div>
+                           <div class="col-lg-3 col-md-6 mb-15">
+                             <label>Select Perticular*</label>
+                             <select class="form-control">
+                                <option>Choose Service</option>
+                                <option>service 1</option>
+                                <option>service  2</option>
+                             </select>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 mb-15">
+                       <button type="submit" class="btn">Call Back Request</button>
+                    </div>
+                  </div>
+               </form>
+               </div>                                   
+                              </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- team area stat -->
-<section class="tp-team-area top-banner-slide pb-40 p-relative">
-    <div class="container">
-        <div class="tp-team-slider wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <div class="tp-team-active swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="tp-team-item">
-                            <div class="tp-team-thumb">
-                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/us-king.jpg" alt="">
-                            </div>
-                            <div class="tp-team-content">
-                                <div class="tp-team-inner">
-                                    <h4 class="tp-team-title"><a href="javascript:void(0)">United Kingdom</a></h4>
-                                </div>
-                                <div class="tp-team-social">
-                                    <div class="tp-team-btn">
-                                        <img
-                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/united-kingdom.png">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="tp-team-item">
-                            <div class="tp-team-thumb">
-                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/usa.jpg" alt="">
-                            </div>
-                            <div class="tp-team-content">
-                                <div class="tp-team-inner">
-                                    <h4 class="tp-team-title"><a href="javascript:void(0)">United States</a></h4>
-                                    <!-- <span>Consultant</span> -->
-                                </div>
-                                <div class="tp-team-social">
-                                    <div class="tp-team-btn">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/usa-ic.png">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            
+         </section>
 
 
-                    <div class="swiper-slide">
-                        <div class="tp-team-item">
-                            <div class="tp-team-thumb">
-                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/canada.jpg" alt="">
-                            </div>
-                            <div class="tp-team-content">
-                                <div class="tp-team-inner">
-                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Canada</a></h4>
-                                    <!-- <span>Consultant</span> -->
-                                </div>
-                                <div class="tp-team-social">
-                                    <div class="tp-team-btn">
-                                        <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/china.png">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="tp-team-item">
-                            <div class="tp-team-thumb">
-                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia.jpg" alt="">
-                            </div>
-                            <div class="tp-team-content">
-                                <div class="tp-team-inner">
-                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Australia</a></h4>
-                                    <!-- <span>Consultant</span> -->
-                                </div>
-                                <div class="tp-team-social">
-                                    <div class="tp-team-btn">
-                                        <img
-                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/australia-ic.png">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="tp-team-item">
-                            <div class="tp-team-thumb">
-                                <img src="<?php echo base_url(); ?>public/kalyan/assets/img/team/singapore.jpg" alt="">
-                            </div>
-                            <div class="tp-team-content">
-                                <div class="tp-team-inner">
-                                    <h4 class="tp-team-title"><a href="javascript:void(0)">Europe</a></h4>
-                                    <!-- <span>Consultant</span> -->
-                                </div>
-                                <div class="tp-team-social">
-                                    <div class="tp-team-btn">
-                                        <img
-                                            src="<?php echo base_url(); ?>public/kalyan/assets/img/team/Union-Flag-icon.png">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="tp-offer-nav text-center">
-                    <button type="button" class="team-button-prev-1" tabindex="0" aria-label="Previous slide"
-                        aria-controls="swiper-wrapper-096a1dd7797ad13b"><i
-                            class="fa-light fa-arrow-left"></i></i></button>
-                    <button type="button" class="team-button-next-1" tabindex="0" aria-label="Next slide"
-                        aria-controls="swiper-wrapper-096a1dd7797ad13b"><i class="fa-light fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- team area end -->
 
 <!-- categories area start -->
 <?php if($page_home_lang_independent['home_service_status'] == 'Show'): ?>
