@@ -631,6 +631,24 @@
 			          </a>
 
 			        </li>
+					<li class="treeview <?php if( ($class_name == 'university') ) {echo 'active';} ?>">
+
+			          <a href="<?php echo base_url(); ?>admin/university">
+
+			            <i class="fa fa-check-circle-o"></i> <span>university</span>
+
+			          </a>
+
+			        </li>
+					<li class="treeview <?php if( ($class_name == 'successstory') ) {echo 'active';} ?>">
+
+			          <a href="<?php echo base_url(); ?>admin/successstory">
+
+			            <i class="fa fa-check-circle-o"></i> <span>Success Story</span>
+
+			          </a>
+
+			        </li>
 
 
 
